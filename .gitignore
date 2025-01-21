@@ -1,32 +1,53 @@
-# Prerequisites
-*.d
+# Build artifacts
+build/
+CMakeFiles/
+cmake-build-*/
+*.cmake
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# Conan data
+.conan/
+conan.lock
+conanbuildinfo.cmake
+conaninfo.txt
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
+# Generated files
+*.a
 *.so
 *.dylib
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
 *.exe
 *.out
 *.app
+*.o
+*.obj
+*.gch
+*.pch
+*.ilk
+*.pdb
+*.lib
+*.exp
+*.manifest
+
+# Test artifacts
+*.gcda
+*.gcno
+*.gcov
+
+# IDE files
+.vs/
+.vscode/
+*.suo
+*.user
+*.sln.docstates
+x64/
+Debug/
+Release/
+
+# Temporary files
+*~
+*.tmp
+*.swp
+
+# Operating system files
+.DS_Store
+Thumbs.db
